@@ -3,20 +3,20 @@
   "configurations": [
     {
       "name": "web",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "apps/web"],
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "3000", "--directory", "apps/web"],
       "port": 3000
     },
     {
       "name": "api",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "apps/api"],
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4000", "--directory", "apps/api"],
       "port": 4000
     },
     {
       "name": "docs",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "apps/docs"],
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "5000", "--directory", "apps/docs"],
       "port": 5000
     }
   ]
